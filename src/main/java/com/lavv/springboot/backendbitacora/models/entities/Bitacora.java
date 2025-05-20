@@ -1,10 +1,10 @@
 package com.lavv.springboot.backendbitacora.models.entities;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 
+@Entity
+@Table(name = "bitacora")
 public class Bitacora {
 
     @Id
