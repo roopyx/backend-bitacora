@@ -12,6 +12,8 @@ public class Bitacora {
     private Long id;
 
     @NotEmpty
+    @Lob
+    @Column(columnDefinition = "LONGTEXT")
     private String contenido;
 
     @NotEmpty
